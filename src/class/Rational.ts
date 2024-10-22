@@ -49,15 +49,15 @@ export class Rational {
     }
 
     public static _parseRational(numArray:String[], denomArray:String[]):Rational{
-        let numerator = parseInt(numArray.join(''));
-        let denominator = parseInt(denomArray.join(''));
+        const numerator = parseInt(numArray.join(''));
+        const denominator = parseInt(denomArray.join(''));
         return new Rational(numerator, denominator);
     }
 
     public static parseRational(rationalStr:String):Rational{
-        let parts = rationalStr.split("/");
-        let numerator = parseInt(parts[0]);
-        let denominator = parseInt(parts[1]);
+        const parts = rationalStr.split("/");
+        const numerator = parseInt(parts[0]);
+        const denominator = parseInt(parts[1]);
         return new Rational(numerator, denominator);
     }
 
